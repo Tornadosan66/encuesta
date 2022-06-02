@@ -14,5 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('encuesta');
+    return view('welcome');
 });
+
+Route::resources([
+    'encuesta' => 'App\Http\Controllers\EncuestaController',
+]);

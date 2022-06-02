@@ -1,0 +1,63 @@
+body{
+	background-color: #322A44;
+	background-image: url('../img/Fondo.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.prueba{
+	background: #131313;
+  	height: 50px;
+  	width: 800px;
+	display: flex;
+	justify-content: center;
+  	align-items: center;
+  	margin: 0 auto;
+  	color: #0F00F0;
+}
+.prueba_2{
+	background: #FFFFFF;
+  	height: 40px;
+  	width: 800px;
+	display: flex;
+	justify-content: center;
+  	align-items: center;
+  	margin: 0 auto;
+  	color: #000000;
+}
+.prueba_3{
+	background: #F0F0F0;
+  	height: 150%;
+  	width: 800px;
+	display: flex;
+	justify-content: center;
+  	align-items: center;
+  	margin: 0 auto;
+  	color: #000000;
+  	font-size: 18px;
+  	font-style: italic;
+  	font-weight: bold;
+}
+.prueba_4{
+	background: #E5E5E5;
+  	height: 180px;
+  	width: 800px;
+	display: flex;
+	justify-content: center;
+  	align-items: center;
+  	margin: 0 auto;
+  	color: #000000;
+  	font-size: 20px;
+  	font-weight: bold;
+}
+.prueba_5{
+	background: #DADADA;
+  	height: 100%;
+  	width: 800px;
+	display: flex;
+	justify-content: center;
+  	align-items: center;
+  	margin: 0 auto;
+  	color: #000000;
+  	font-size: 20px;
+}
