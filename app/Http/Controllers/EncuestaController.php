@@ -8,6 +8,7 @@ use App\Models\Fisicomatematico;
 use App\Models\Humanidades;
 use App\Models\Quimico;
 use App\Models\Social;
+use App\Models\Puntaje;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -41,5 +42,11 @@ class EncuestaController extends Controller
 
         return view('encuesta', compact('administradores','biologos','matematicos','humanos','quimicos','sociales'));
         //return view('encuesta', compact('preguntas'));
+    }
+    public function ingresar(Request $request)
+    {
+        $puntuacion = new Puntaje();
+        $puntuacion->nombre = $request->nom;
+        $puntuacion->escuela_procedencia = $request->escuela;
     }
 }
