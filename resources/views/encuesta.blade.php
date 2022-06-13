@@ -17,7 +17,8 @@
         <div class="prueba_3">
             <p><center>A continuación presentamos una serie de actividades, debes establecer una jerarquía de preferencia.<br>Procede de la siguiente manera:<br><br>Califica con 6 la actividad que para ti tiene la mayor preferencia, la que sigue con 5, y así sucesivamente, hasta el 1, que significa menor preferencia.<br>No se puede repetir el número en cada grupo de enunciados.<br>Si observas que alguna actividad se repite, no pienses en lo que contestaste anteriomente.<br>Si al jerarquizar notas que ninguna actividad te satisface, entonces piensa cuál sería la que menos te disgusta.</center></p>
         </div>
-        <!--<form method="POST" action="{{ route('encuesta.index') }}" aria-label="{{ __('encuesta') }}" enctype="multipart/form-data">-->
+        <form method="POST" action="{{ route('encuesta.store') }}" aria-label="{{ __('encuesta') }}" enctype="multipart/form-data">
+            @csrf
         <div class="prueba_4">
             <div class="card-body">
                 <div class="row">
@@ -28,6 +29,11 @@
                     <div class="col-md-8">
                         <label for="escuela">Escuela de procedencia:</label><br>
                         <input id="escuela" type="text" name="escuela" placeholder="Ejem. Univer" class="form-control" required>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 1%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">1%</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1170,7 +1176,7 @@
             </div>
         </div>
 
-        <!--</form>-->
+        </form>
 
         <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
         <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/css/bootstrap-select.min.css'>

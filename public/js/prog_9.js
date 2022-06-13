@@ -3259,6 +3259,7 @@ $("#hum_10").selectpicker('refresh');
 $(document).change(function(){
 if($("#mate_10").val() != 0 && $("#bio_10").val() != 0 && $("#quim_10").val() != 0 && $("#admin_10").val() != 0 && $("#social_10").val() != 0 && $("#hum_10").val() != 0){
     $("#confirmar").show();
+    $(".progress-bar").css("width", "99%").text("99%");
 }else{
     $("#confirmar").hide();
 }
@@ -3268,5 +3269,6 @@ $("#boton_atras_9").click(function(){
 
     $("#10_Seccion").hide();
     $("#9_Seccion").show();
+    $(".progress-bar").css("width", "80%").text("80%");
 
 });

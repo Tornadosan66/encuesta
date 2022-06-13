@@ -3268,5 +3268,6 @@ $('#boton_sig_1').click(function(){
     
     $("#1_Seccion").hide();
     $("#2_Seccion").show();
+    $(".progress-bar").css("width", "10%").text("10%");
 
 });

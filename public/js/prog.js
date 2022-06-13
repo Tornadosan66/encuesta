@@ -3262,12 +3262,17 @@ if($("#mate_2").val() != 0 && $("#bio_2").val() != 0 && $("#quim_2").val() != 0 
 }else{
     $("#boton_2").hide();
 }
+
+if($("#1_Seccion").is(':visible')){
+    $(".progress-bar").css("width", "5%").text("5%");
+}
 });
 
 $("#boton_atras_1").click(function(){
 
     $("#2_Seccion").hide();
     $("#1_Seccion").show();
+    $(".progress-bar").css("width", "5%").text("5%");
 
 });
 
@@ -3275,5 +3280,7 @@ $('#boton_sig_2').click(function(){
     
     $("#2_Seccion").hide();
     $("#3_Seccion").show();
+    $(".progress-bar").css("width", "20%").text("20%");
 
 });
+

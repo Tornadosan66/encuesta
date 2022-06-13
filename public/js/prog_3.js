@@ -3268,6 +3268,7 @@ $("#boton_atras_3").click(function(){
 
     $("#4_Seccion").hide();
     $("#3_Seccion").show();
+    $(".progress-bar").css("width", "20%").text("20%");
 
 });
 
@@ -3275,5 +3276,6 @@ $('#boton_sig_4').click(function(){
     
     $("#4_Seccion").hide();
     $("#5_Seccion").show();
+    $(".progress-bar").css("width", "40%").text("40%");
 
 });
