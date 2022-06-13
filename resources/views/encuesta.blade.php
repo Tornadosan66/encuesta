@@ -15,7 +15,7 @@
             <h3>Instrucciones:</h3>
         </div>
         <div class="prueba_3">
-            <p><center>A continuación presentamos una serie de actividades, debes establecer una jerarquía de preferencia.<br>Procede de la siguiente manera:<br><br>Califica con 6 la actividad que para ti tiene la mayor preferencia, la que sigue con 5, y así sucesivamente, hasta el 1, que significa menor preferencia.<br>No se puede repetir el número en cada grupo de enunciados.<br>Si observas que alguna actividad se repite, no pienses en lo que contestaste anteriomente.<br>Si al jerarquizar notas que ninguna actividad te satisface, entonces piensa cuál sería la que menos te disgusta.</center></p>
+            <p><center>A continuación presentamos una serie de actividades, debes establecer una jerarquía de preferencia.<br>Procede de la siguiente manera:<br>Califica con 6 la actividad que para ti tiene la mayor preferencia, la que sigue con 5, y así sucesivamente, hasta el 1, que significa menor preferencia.<br>No se puede repetir el número en cada grupo de enunciados.<br>Si observas que alguna actividad se repite, no pienses en lo que contestaste anteriomente.<br>Si al jerarquizar notas que ninguna actividad te satisface, entonces piensa cuál sería la que menos te disgusta.</center></p>
         </div>
         <form method="POST" action="{{ route('encuesta.store') }}" aria-label="{{ __('encuesta') }}" enctype="multipart/form-data">
             @csrf
@@ -32,8 +32,8 @@
                     </div>
                     <div class="col-md-8">
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 1%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">1%</div>
-                        </div>
+                            <div class="progress-bar" role="progressbar" style="width: 1%; color: #000000" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">1%</div>
+                </div>
                     </div>
                 </div>
             </div>
@@ -141,12 +141,12 @@
                         @endif
                     @endforeach<br>
                 </div>
-            </div><br><br>
+            </div><br>
             <div id="boton_1" style="display: none">
                 <center>
                     <button type="button" id="boton_sig_1">Siguiente</button>
                 </center>
-            </div><br><br>
+            </div><br>
             </div>
 
 <!--2da seccion-->
@@ -255,12 +255,12 @@
                         @endif
                     @endforeach<br>
                 </div>
-            </div><br><br>
+            </div><br>
             <div id="boton_2" style="display: none">
                 <center>
                     <button type="button" id="boton_sig_2">Siguiente</button>
                 </center>
-            </div><br><br>
+            </div><br>
             </div>
 
 <!--3ra seccion-->
@@ -369,12 +369,12 @@
                         @endif
                     @endforeach<br>
                 </div>
-            </div><br><br>
+            </div><br>
             <div id="boton_3" style="display: none">
                 <center>
                     <button type="button" id="boton_sig_3">Siguiente</button>
                 </center>
-            </div><br><br>
+            </div><br>
             </div>
 
 <!--4ta seccion-->
@@ -483,12 +483,12 @@
                         @endif
                     @endforeach<br>
                 </div>
-            </div><br><br>
+            </div><br>
             <div id="boton_4" style="display: none">
                 <center>
                     <button type="button" id="boton_sig_4">Siguiente</button>
                 </center>
-            </div><br><br>
+            </div><br>
             </div>
 
 <!--5ta seccion-->
@@ -597,12 +597,12 @@
                         @endif
                     @endforeach<br>
                 </div>
-            </div><br><br>
+            </div><br>
             <div id="boton_5" style="display: none">
                 <center>
                     <button type="button" id="boton_sig_5">Siguiente</button>
                 </center>
-            </div><br><br>
+            </div><br>
             </div>
 
 <!--6ta seccion-->
@@ -711,12 +711,12 @@
                         @endif
                     @endforeach<br>
                 </div>
-            </div><br><br>
+            </div><br>
             <div id="boton_6" style="display: none">
                 <center>
                     <button type="button" id="boton_sig_6">Siguiente</button>
                 </center>
-            </div><br><br>
+            </div><br>
             </div>
 
 <!--7ma seccion-->
@@ -825,12 +825,12 @@
                         @endif
                     @endforeach<br>
                 </div>
-            </div><br><br>
+            </div><br>
             <div id="boton_7" style="display: none">
                 <center>
                     <button type="button" id="boton_sig_7">Siguiente</button>
                 </center>
-            </div><br><br>
+            </div><br>
             </div>
 
 <!--8va seccion-->
@@ -939,12 +939,12 @@
                         @endif
                     @endforeach<br>
                 </div>
-            </div><br><br>
+            </div><br>
             <div id="boton_8" style="display: none">
                 <center>
                     <button type="button" id="boton_sig_8">Siguiente</button>
                 </center>
-            </div><br><br>
+            </div><br>
             </div>
 
 <!--9na seccion-->
@@ -1053,12 +1053,12 @@
                         @endif
                     @endforeach<br>
                 </div>
-            </div><br><br>
+            </div><br>
             <div id="boton_9" style="display: none">
                 <center>
                     <button type="button" id="boton_sig_9">Siguiente</button>
                 </center>
-            </div><br><br>
+            </div><br>
             </div>
 
 <!--10ma seccion-->
@@ -1167,12 +1167,12 @@
                         @endif
                     @endforeach<br>
                 </div>
-            </div><br><br>
+            </div><br>
             <div id="confirmar" style="display: none">
                 <center>
                     <button type="submit" id="guardar">Terminar</button>
                 </center>
-            </div><br><br>
+            </div><br>
             </div>
         </div>
 
