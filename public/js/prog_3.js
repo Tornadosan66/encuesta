@@ -3254,28 +3254,3 @@ if($("#mate_4").val() == 1 && $("#bio_4").val() == 2 && $("#quim_4").val() == 3 
 }
 $("#hum_4").selectpicker('refresh');
 });
-
-
-$(document).change(function(){
-if($("#mate_4").val() != 0 && $("#bio_4").val() != 0 && $("#quim_4").val() != 0 && $("#admin_4").val() != 0 && $("#social_4").val() != 0 && $("#hum_4").val() != 0){
-    $("#boton_4").show();
-}else{
-    $("#boton_4").hide();
-}
-});
-
-$("#boton_atras_3").click(function(){
-
-    $("#4_Seccion").hide();
-    $("#3_Seccion").show();
-    $(".progress-bar").css("width", "20%").text("20%");
-
-});
-
-$('#boton_sig_4').click(function(){
-    
-    $("#4_Seccion").hide();
-    $("#5_Seccion").show();
-    $(".progress-bar").css("width", "40%").text("40%");
-
-});

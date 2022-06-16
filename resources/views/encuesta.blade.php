@@ -62,7 +62,7 @@
                     @endforeach<br><br>
                     @foreach ($biologos as $pregunton)
                         @if($pregunton->id_tabla_general == 2)
-                            <div id="biologo" class="col-md-8" style="display: none">
+                            <div id="biologo" class="col-md-8" style="display: block;">
                                 <label for="bio">2.- {{$pregunton->pregunta}}</label><br>
                                 <select required id="bio" name="bio" class="form-control selectpicker"data-live-search="true">
                                     <option value="0"><--Seleccionar--></option>
@@ -78,7 +78,7 @@
                     @endforeach<br><br>
                     @foreach ($quimicos as $pregunton)
                         @if($pregunton->id_tabla_general == 3)
-                            <div id="quimica" class="col-md-8" style="display: none">
+                            <div id="quimica" class="col-md-8" style="display: block">
                                 <label for="quim">3.- {{$pregunton->pregunta}}</label><br>
                                 <select required id="quim" name="quim" class="form-control selectpicker"data-live-search="true">
                                     <option value="0"><--Seleccionar--></option>
@@ -94,7 +94,7 @@
                     @endforeach<br><br>
                     @foreach ($administradores as $pregunton)
                         @if($pregunton->id_tabla_general == 4)
-                            <div id="administracion" class="col-md-8" style="display: none">
+                            <div id="administracion" class="col-md-8" style="display: block">
                                 <label for="admin">4.- {{$pregunton->pregunta}}</label><br>
                                 <select required id="admin" name="admin" class="form-control selectpicker"data-live-search="true">
                                     <option value="0"><--Seleccionar--></option>
@@ -110,7 +110,7 @@
                     @endforeach<br><br>
                     @foreach ($sociales as $pregunton)
                         @if($pregunton->id_tabla_general == 5)
-                            <div id="sociales" class="col-md-8" style="display: none">
+                            <div id="sociales" class="col-md-8" style="display: block">
                                 <label for="social">5.- {{$pregunton->pregunta}}</label><br>
                                 <select required id="social" name="social" class="form-control selectpicker"data-live-search="true">
                                     <option value="0"><--Seleccionar--></option>
@@ -126,7 +126,7 @@
                     @endforeach<br><br>
                     @foreach ($humanos as $pregunton)
                         @if($pregunton->id_tabla_general == 6)
-                            <div id="humanidad" class="col-md-8" style="display: none">
+                            <div id="humanidad" class="col-md-8" style="display: block">
                                 <label for="hum">6.- {{$pregunton->pregunta}}</label><br>
                                 <select required id="hum" name="hum" class="form-control selectpicker"data-live-search="true">
                                     <option value="0"><--Seleccionar--></option>
