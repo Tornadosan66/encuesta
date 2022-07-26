@@ -20,3 +20,4 @@ Route::get('/', function () {
 Route::resources([
     'encuesta' => 'App\Http\Controllers\EncuestaController',
 ]);
+

@@ -16,16 +16,13 @@ class EncuestaController extends Controller
 {
     public function index()
     {
-        /*
-        $preguntas = DB::table('fisico_matematico')
+        /*$preguntas = DB::table('fisico_matematico')
         ->join('biologico','biologico.id_tabla_general','=','fisico_matematico.id_tabla_general')->select('*')
         ->join('quimico','quimico.id_tabla_general','=','fisico_matematico.id_tabla_general')->select('*')
         ->join('administrativo','administrativo.id_tabla_general','=','fisico_matematico.id_tabla_general')->select('*')
         ->join('social','social.id_tabla_general','=','fisico_matematico.id_tabla_general')->select('*')
         ->join('humanidades','humanidades.id_tabla_general','=','fisico_matematico.id_tabla_general')->select('*')
-        ->get();
-        dd($preguntas);
-        */
+        ->get();*/
 
         $administradores = new Administrativo();
         $administradores = $administradores->all();
@@ -41,7 +38,10 @@ class EncuestaController extends Controller
         $sociales = $sociales->all();
 
         return view('encuesta', compact('administradores','biologos','matematicos','humanos','quimicos','sociales'));
-        //return view('encuesta', compact('preguntas'));
+    }
+    public function create()
+    {
+        return view('welcome');
     }
     public function store(Request $request)
     {
@@ -56,9 +56,6 @@ class EncuestaController extends Controller
         $soc = $request->social + $request->social_2 + $request->social_3 + $request->social_4 + $request->social_5 + $request->social_6 + $request->social_7 + $request->social_8 + $request->social_9 + $request->social_10;
         $hum = $request->hum + $request->hum_2 + $request->hum_3 + $request->hum_4 + $request->hum_5 + $request->hum_6 + $request->hum_7 + $request->hum_8 + $request->hum_9 + $request->hum_10;
 
-        //dd($request->all());
-        //dd($fm, $bio, $quim, $admon, $soc, $hum);
-
         $puntuacion->puntaje_fm = $fm;
         $puntuacion->puntaje_bio = $bio;
         $puntuacion->puntaje_quim = $quim;
@@ -68,6 +65,9 @@ class EncuestaController extends Controller
 
         $puntuacion->save();
 
-        return view('welcome');
+        $nombre = $request->nom;
+        $escuela = $request->escuela;
+
+        return view('goodbye', compact('nombre','escuela','fm','bio','quim','quim','admon','soc','hum'));
     }
 }
