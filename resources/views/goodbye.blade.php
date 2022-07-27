@@ -37,6 +37,9 @@
 
                     <div class="col-md-12">
                         <center>
+                            <a href="{{route('prueba',$id)}}">
+                                <button type="button" class="btn btn-primary">Ver PDF</button>
+                            </a>
                             <a href="{{route('encuesta.create')}}">
                                 <button type="button" class="btn btn-primary">Volver</button>
                             </a>

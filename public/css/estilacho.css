@@ -74,3 +74,15 @@ body{
   	font-size: 17px;
   	font-weight: bold;
 }
+.prueba_7{
+	background: #E5E5E5;
+  	height: 110%;
+  	width: 840px;
+	display: flex;
+	justify-content: center;
+  	align-items: center;
+  	margin: 0 auto;
+  	color: #000000;
+  	font-size: 17px;
+  	font-weight: bold;
+}

@@ -43,11 +43,24 @@ class EncuestaController extends Controller
     {
         return view('welcome');
     }
+    public function prueba($id)
+    {
+        $puntaje = Puntaje::findorfail($id);
+
+        $pdf = \PDF::loadView('pdf',compact('puntaje'));
+        return $pdf->stream('puntacion'.$puntaje->nombre.'.pdf');
+
+        //return view('pdf', compact('puntaje'));
+
+    }
     public function store(Request $request)
     {
         $puntuacion = new Puntaje();
         $puntuacion->nombre = $request->nom;
         $puntuacion->escuela_procedencia = $request->escuela;
+
+        $ide = Puntaje::select('id')->orderBy('id', 'desc')->first();
+        $id = $ide->id + 1;
 
         $fm = $request->mate + $request->mate_2 + $request->mate_3 + $request->mate_4 + $request->mate_5 + $request->mate_6 + $request->mate_7 + $request->mate_8 + $request->mate_9 + $request->mate_10;
         $bio = $request->bio + $request->bio_2 + $request->bio_3 + $request->bio_4 + $request->bio_5 + $request->bio_6 + $request->bio_7 + $request->bio_8 + $request->bio_9 + $request->bio_10;
@@ -68,6 +81,6 @@ class EncuestaController extends Controller
         $nombre = $request->nom;
         $escuela = $request->escuela;
 
-        return view('goodbye', compact('nombre','escuela','fm','bio','quim','quim','admon','soc','hum'));
+        return view('goodbye', compact('id','nombre','escuela','fm','bio','quim','quim','admon','soc','hum'));
     }
 }
