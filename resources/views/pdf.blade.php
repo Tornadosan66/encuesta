@@ -61,15 +61,15 @@ div.primero {
 			<div class="row">
 				<div class="col-md-12">
 					<center>
-	                    <p>Nombre: {{$puntaje->nombre}}<br>
-	                    Escuela de procedencia: {{$puntaje->escuela_procedencia}}<br>
-	                    <br>
-	                    Fisíco matematico: &nbsp; {{$puntaje->puntaje_fm}}<br>
-	                    Biológico: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{$puntaje->puntaje_bio}}<br>
-	                    Químico: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{$puntaje->puntaje_quim}}<br>
-	                    Administrativo: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{$puntaje->puntaje_admon}}<br>
-	                    Social: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{$puntaje->puntaje_soc}}<br>
-	                    Humanidades: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{$puntaje->puntaje_hum}}</p>
+	          <p>Nombre: {{$puntaje->nombre}}<br>
+	          Escuela de procedencia: {{$puntaje->escuela_procedencia}}<br>
+	          <br>
+	          Fisíco matematico: &nbsp; {{$puntaje->puntaje_fm}}<br>
+	          Biológico: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{$puntaje->puntaje_bio}}<br>
+	          Químico: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{$puntaje->puntaje_quim}}<br>
+	          Administrativo: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{$puntaje->puntaje_admon}}<br>
+	          Social: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{$puntaje->puntaje_soc}}<br>
+	          Humanidades: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{$puntaje->puntaje_hum}}</p>
 					</center>
 				</div>
 			</div>

@@ -13,12 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 Route::resources([
     'encuesta' => 'App\Http\Controllers\EncuestaController',
 ]);
 
 Route::get('/prueba/{id}','App\Http\Controllers\EncuestaController@prueba')->name('prueba');
+Route::get('/','App\Http\Controllers\EncuestaController@index');
